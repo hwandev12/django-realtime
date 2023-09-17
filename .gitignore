@@ -1,0 +1,6 @@
+.environment
+core/__pycache__
+real/__pycache__
+celerybeat-schedule
+db.sqlite3
+.vscode

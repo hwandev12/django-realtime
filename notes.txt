@@ -1,0 +1,17 @@
+1.pip install 'celery[redis]'
+2.create celery file inside core app
+3.then write requirements to settings.py file like CELERY_BROKER_URL AND RESULTS URL
+4.inside __init__.py file write requirements
+5.create tasks.py file inside app and write requirements
+6.insider celery.py file i should add BEAT and set it two required times like 3s, 4s
+7.then start the celery 
+FOR BEAT --> celery -A core beat -l INFO
+FOR WORKER --> celery -A core worker -l INFO
+8.install pip install channels and add it to settings
+9.configure asgi.py file to run the server in daphne. pip install daphne and add it to top of the INSTALLED APP SECTION
+10.create routing file inside app and write requirements
+11.create consumers.py file inside app and write requirements
+12.update asgi.py file with requirements
+13.pip install channels-redis
+14.add channels layers to settings
+15.update tasks.py file and add channel_layer and async_to_sync 
